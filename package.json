@@ -1,21 +1,16 @@
 {
-  "name": "weweb-ag-grid-component",
-  "version": "1.0.0",
-  "private": true,
+  "name": "hp-base",
+  "version": "3.4.0",
+  "description": "Hosting Platform base image - Express server with Postgres, live route deployment, stored functions",
+  "main": "server.js",
   "scripts": {
-    "build": "weweb build",
-    "serve": "weweb serve -- --port 8081"
+    "start": "node server.js"
   },
   "dependencies": {
-    "ag-grid-community": "^31.0.3",
-    "lodash": "^4.17.21"
-  },
-  "devDependencies": {
-    "@weweb/cli": "^3.8.13",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.2"
-  },
-  "weweb": {
-    "componentPath": "./src/CustomAgGrid.vue"
+    "express": "^4.21.0",
+    "pg": "^8.13.0",
+    "cors": "^2.8.5",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3"
   }
 }
